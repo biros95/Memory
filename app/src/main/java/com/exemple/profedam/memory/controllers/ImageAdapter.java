@@ -61,7 +61,7 @@ public class ImageAdapter extends BaseAdapter {
             imageView.setLayoutParams(new GridView.LayoutParams(280,320));
             imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
             imageView.setPadding(8, 8, 8, 8);
-            imageView.setImageResource(partida.getLlistaCartes().get(position).getFrontImage());
+            imageView.setImageResource(partida.getLlistaCartes().get(position).getActive());
         } else {
             imageView = (ImageView) convertView;
         }

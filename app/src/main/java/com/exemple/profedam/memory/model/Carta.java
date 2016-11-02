@@ -21,4 +21,36 @@ public class Carta {
     public int getFrontImage() {
         return frontImage;
     }
+
+    public void girar()
+    {
+        //TODO gira la carta
+        switch(estat) {
+            case BACK:
+                estat = Estat.FRONT;
+                break;
+
+            case FRONT:
+                estat = Estat.BACK;
+                break;
+
+        }
+
+
+    }
+
+    public int getActive()
+    {
+        int imageActive = 0;
+        switch(estat){
+            case BACK:
+                imageActive = this.backImage;
+                break;
+
+            case FRONT: FIXED:
+                imageActive = this.frontImage;
+                break;
+        }
+        return imageActive;
+    }
 }

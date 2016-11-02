@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
+import com.exemple.profedam.memory.model.Carta;
 
 
 /**
@@ -23,8 +24,14 @@ public class GeneralListener implements AdapterView.OnItemClickListener{
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
-             Toast.makeText (tauler, "position" + position, Toast.LENGTH_SHORT).show();
-             view.setVisibility(View.INVISIBLE);
+             Carta cartaOnClick = tauler.getPartida().getLlistaCartes().get(position);
+        cartaOnClick.girar();
+        tauler.refrescarTablero();
+
+
+
+        Toast.makeText (tauler, "position" + position, Toast.LENGTH_SHORT).show();
+
             }
     }
 

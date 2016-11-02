@@ -30,12 +30,17 @@ public class Partida {
 
     public Partida(int numeroCartes) {
         this.numeroCartes = numeroCartes;
-        //TODO rellenar llistaCartes
+        //TODO hacer que no salgan siempre las 6 primeras cartas
+        /* El truco es desordenar totalCartes antes de repartir */
+
         llistaCartes = new ArrayList();
         for (int contador = 0; contador<getNumeroCartes(); contador++)
         {
+
+
             llistaCartes.add(new Carta(totalCartes[contador/2]));
         }
+        Collections.shuffle(llistaCartes);
 
 
 
