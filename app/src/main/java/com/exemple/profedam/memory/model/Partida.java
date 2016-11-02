@@ -31,6 +31,12 @@ public class Partida {
     public Partida(int numeroCartes) {
         this.numeroCartes = numeroCartes;
         //TODO rellenar llistaCartes
+        llistaCartes = new ArrayList();
+        for (int contador = 0; contador<getNumeroCartes(); contador++)
+        {
+            llistaCartes.add(new Carta(totalCartes[contador/2]));
+        }
+
 
 
     }
