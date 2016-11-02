@@ -45,12 +45,7 @@ public class MainActivity extends Activity {
         GeneralListener listener = new GeneralListener(this);
         gv.setAdapter(adapter);
         gv.setOnItemClickListener(listener);
-        
-        /*gv.setOnItemClickListener(new OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                Toast.makeText(TaulerActivity.this, "" + position, Toast.LENGTH_SHORT).show();
-            }
-        });*/
+
     }
 }
 
