@@ -22,6 +22,15 @@ public class Carta {
         return frontImage;
     }
 
+    public void setEstat(Estat estat) {
+        this.estat = estat;
+    }
+
+    public Estat getEstat() {
+
+        return estat;
+    }
+
     public void girar()
     {
         //TODO gira la carta

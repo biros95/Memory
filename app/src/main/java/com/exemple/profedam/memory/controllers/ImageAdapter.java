@@ -11,7 +11,10 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.exemple.profedam.memory.R;
+import com.exemple.profedam.memory.model.Carta;
 import com.exemple.profedam.memory.model.Partida;
+
+import java.util.ArrayList;
 
 public class ImageAdapter extends BaseAdapter {
 
@@ -48,6 +51,9 @@ public class ImageAdapter extends BaseAdapter {
     public Object getItem(int position) {
         return null;
     }
+
+
+
 
     public long getItemId(int position) {
         return 0;

@@ -53,4 +53,14 @@ public class Partida {
     public int getNumeroCartes() {
         return numeroCartes;
     }
+
+    public ArrayList<Carta> mostrarCartasFront() {
+        ArrayList<Carta> listaCartasFront = new ArrayList();
+        for (Carta carta : getLlistaCartes()) {
+            if (carta.getEstat() == Carta.Estat.FRONT) {
+                listaCartasFront.add(carta);
+            }
+        }
+        return listaCartasFront;
+    }
 }

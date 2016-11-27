@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Memory</string>
+
+    <string-array name="intents">
+        <item>Muy dificl</item>
+        <item>Dificil</item>
+        <item>Facil</item>
+        <item>Muy facil</item>
+    </string-array>
 </resources>
